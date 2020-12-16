@@ -35,6 +35,10 @@ getAllChild.forEach((element) => {
   console.log("Closest grandparent: ", element.closest(".grandparent"));
 });
 
-// get sibling
+// get next sibling
 const firstChild = parentDOM.querySelector(".child");
-firstChild.nextElementSibling.style.backgroundColor = "silver";
+const secondChild = firstChild.nextElementSibling;
+secondChild.style.backgroundColor = "silver";
+// get previous sibling
+const goBackSibling = secondChild.previousElementSibling;
+goBackSibling.style.border = "5px dotted blue";
