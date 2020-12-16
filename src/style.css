@@ -1,0 +1,38 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grandparent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: red;
+  height: 100vh;
+  width: 100vw;
+  border: 3px solid #333;
+}
+
+.parent {
+  background-color: blue;
+  height: 40%;
+  width: 70%;
+  border: 3px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.child {
+  background-color: green;
+  height: 35%;
+  width: 35%;
+  border: 3px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
